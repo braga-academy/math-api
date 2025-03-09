@@ -1,0 +1,6 @@
+fastapi
+aiocache[redis]
+uvicorn
+pydantic
+pytest
+httpx

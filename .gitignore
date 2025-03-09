@@ -1,0 +1,41 @@
+# Ignora o ambiente virtual
+venv/
+.env/
+
+# Ignora arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignora arquivos de configuração local
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignora arquivos de configuração do VS Code
+.vscode/
+
+# Ignora arquivos de banco de dados SQLite
+*.sqlite3
+
+# Ignora arquivos de log
+*.log
+
+# Ignora diretórios de build e distribuição
+build/
+dist/
+*.egg-info/
+
+# Ignora arquivos de configuração do Docker
+docker-compose.override.yml
+
+# Ignora arquivos de IDE
+.idea/
+*.iml
+
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
+.pytest_cache
