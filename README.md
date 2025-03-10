@@ -46,15 +46,7 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/braga-academy/math-api.git
-cd calc-api
-```
-
-Crie um arquivo `.env` (opcional):
-
-Se precisar configurar variáveis de ambiente, crie um arquivo `.env` na raiz do projeto:
-
-```bash
-REDIS_URL=redis://redis:6379
+cd math-api
 ```
 
 ## Executando a Aplicação
