@@ -3,4 +3,5 @@ aiocache[redis]
 uvicorn
 pydantic
 pytest
+pytest-cov
 httpx
