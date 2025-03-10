@@ -1,10 +1,9 @@
 # Calc API
 
-API RESTful para realizar operações matemáticas de soma e média.
+A Calc API é uma aplicação RESTful desenvolvida em Python com FastAPI. Ela realiza operações matemáticas básicas, como somar números e calcular a média aritmética de um vetor de inteiros. A aplicação utiliza Redis para cache e Docker para facilitar a execução em diferentes ambientes.
 
 ## Sumário
 
-- [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Pré-requisitos](#pré-requisitos)
@@ -15,10 +14,6 @@ API RESTful para realizar operações matemáticas de soma e média.
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
-
-## Visão Geral
-
-A Calc API é uma aplicação RESTful desenvolvida em Python com FastAPI. Ela realiza operações matemáticas básicas, como somar números e calcular a média de uma lista de números. A aplicação utiliza Redis para cache e Docker para facilitar a execução em diferentes ambientes.
 
 ## Funcionalidades
 
@@ -48,7 +43,7 @@ A Calc API é uma aplicação RESTful desenvolvida em Python com FastAPI. Ela re
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/calc-api.git
+git clone https://github.com/braga-academy/math-api.git
 cd calc-api
 ```
 
@@ -67,25 +62,7 @@ REDIS_URL=redis://redis:6379
 Construa e execute os containers:
 
 ```bash
-docker-compose up --build
-```
-
-Acesse a aplicação:
-
-A API estará disponível em [http://localhost:8000](http://localhost:8000).
-
-### Executando Localmente (sem Docker)
-
-Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
-
-Execute a aplicação:
-
-```bash
-uvicorn app.main:app --reload
+docker-compose up -d --build
 ```
 
 Acesse a aplicação:
@@ -116,7 +93,7 @@ Os testes são executados automaticamente em cada push ou pull request para o re
 
 ## Documentação da API
 
-A documentação da API é gerada automaticamente pelo FastAPI e pode ser acessada nos seguintes links:
+A documentação da API pode ser acessada nos seguintes links:
 
 - **Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
 - **Redoc**: [http://localhost:8000/redoc](http://localhost:8000/redoc)
@@ -192,14 +169,14 @@ calc-api/
 │   ├── main.py
 │   ├── api/
 │   │   ├── __init__.py
-│   │   ├── math.py          # Rotas para operações matemáticas
-│   │   └── health.py        # Rota para health check
+│   │   ├── math.py
+│   │   └── health.py
 │   ├── models/
 │   │   ├── __init__.py
-│   │   └── numbers.py       # Modelos de dados
+│   │   └── numbers.py
 │   ├── services/
 │   │   ├── __init__.py
-│   │   └── math_operations.py  # Lógica de negócio
+│   │   └── math_operations.py
 │
 ├── tests/
 │   ├── __init__.py
@@ -218,33 +195,3 @@ calc-api/
 ├── .gitignore
 └── README.md
 ```
-
-## Contribuição
-
-Faça um fork do repositório.
-
-Crie uma nova branch:
-
-```bash
-git checkout -b feature/nova-feature
-```
-
-Faça commit das suas alterações:
-
-```bash
-git commit -m "Adiciona nova feature"
-```
-
-Envie as alterações:
-
-```bash
-git push origin feature/nova-feature
-```
-
-Abra um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-Se precisar de mais ajustes ou tiver dúvidas, estou à disposição! 😊
