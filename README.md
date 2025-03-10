@@ -1,6 +1,6 @@
 # Calc API
 
-![Testes](https://github.com/github/docs/actions/workflows/ci.yml/badge.svg)
+![Testes](https://github.com/braga-academy/math-api/actions/workflows/ci.yml/badge.svg)
 
 A Calc API é uma aplicação RESTful desenvolvida em Python com FastAPI. Ela realiza operações matemáticas básicas, como somar números e calcular a média aritmética de um vetor de inteiros. A aplicação utiliza Redis para cache e Docker para facilitar a execução em diferentes ambientes.
 
